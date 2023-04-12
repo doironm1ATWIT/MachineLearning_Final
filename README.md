@@ -30,6 +30,7 @@ I would consider this dataset to be relatively balanced. There is not an overwhe
 
 Any correlation between features?
 
+![alt text](https://github.com/[doironm1ATWIT]/[MachineLearning_Final]/blob/[main]/target variable vs thalach.png?raw=true)
 
 
 
