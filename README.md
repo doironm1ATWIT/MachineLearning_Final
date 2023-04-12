@@ -45,6 +45,8 @@ Are there any outliers?
 
 Looking at this boxplot, there seems to be quite a few outliers for the attribute trestbps. This could cause an issue in our machine learning model predictions, but we will leave them in the dataset for now. 
 
+I do not believe that there needs to be any feature engineering necessary for this dataset, all of the features have numerical outputs.
+
 
 ## Models
 
