@@ -30,6 +30,7 @@ I would consider this dataset to be relatively balanced. There is not an overwhe
 
 Any correlation between features?
 
+![data_screenshot](target variable vs thalach.png)
 
 
 
