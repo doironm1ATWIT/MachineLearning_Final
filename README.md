@@ -32,9 +32,31 @@ Any correlation between features?
 
 ![data_screenshot](target_variable_vs_thalach.png)
 
+There looks to be a small correlation between the target variable and thalach. It looks like more people who have a lower thalach level are diagnosed with heart disease. 
+
+![data_screenshot](target_vs_trestbps_scatter.png)
+It looks like there is a small correlation between the target variable and trestbps. The higher the trestbps, the more likely there is heart disease detected.
+
+
+Are there any outliers?
+
+insert trestbps boxplot image
+
+
+Looking at this boxplot, there seems to be quite a few outliers for the attribute trestbps. This could cause an issue in our machine learning model predictions, but we will leave them in the dataset for now. 
 
 
 ## Models
+
+The three models used in this analysis are Logistic Regression, Support Vector Classifier, and Random Forests. Below are the results without hyperparameter tuning.
+
+| Model              | Test Accuracy Score | Train Accuracy Score | ROC AUC Score |
+| ------------------ | ------------------- | -------------------- | ------------- |
+| Logistic Regression| 0.86                | 0.84                 | 0.85          |
+| SVC                | 0.70                | 0.63                 | 0.67          |
+| Random Forest      | 0.85                | 1.0                  | 0.84          |
+
+
 
 
 ## Baseline Performance
