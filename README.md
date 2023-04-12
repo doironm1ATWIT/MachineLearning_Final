@@ -56,7 +56,44 @@ The three models used in this analysis are Logistic Regression, Support Vector C
 | SVC                | 0.70                | 0.63                 | 0.67          |
 | Random Forest      | 0.85                | 1.0                  | 0.84          |
 
+The logisitc regression model looks like the most promising model for predicting whether someone has heart disease or not. The test accuracy is 0.86 and the train accuracy is 0.84. The ROC AUC score tells us how efficient the model is and tells us how well the model's performance is at distinguishing between the positive and negative classes. A score of 0.85 is a good baseline for this. There is always room for improvement. 
+The SVC results are not as good as the logistic regression results. The test accuracy is 0.70 and the train accuracy is 0.63. It is interesting that the model accuracy for the train data is lower than the test. The ROC AUC Score is also low, this means that the model did not predict the positive and negative classes as well as the other models. Again, there is always room for improvement with hyperparameter tuning. 
+The Random Forest test accuracy is 0.85 and the train accuracy is 1.0. A model that predicts the train data 100 percent correct is overfit. This model should have had a higher accuracy score for the test data if it can accurately predict 100 percent of the training data. After hyperparamter tuning these accuracies could change. 
 
 
 
 ## Baseline Performance
+
+Hyperparameter tuning is needed to fine tune these models and adjust the accuracies. Grid search will be utilized to see which combination of parameters produce the best model performance. 
+
+Parameters adjusted for Logistic Regression:
+solver, penalty, and C
+
+Parameters adjusted for Support Vector Machines:
+C and gamma.
+
+Parameters to be adjusted for RandomForestClassifier:
+n_estimators, max_depth, min_samples_split 
+
+After the grid search, the best hyperparameters for each of the models were the followings:
+Logistic Regression:
+C = 0.1, penalty = l2, random_state = 0, solver = newton-cg
+
+Support Vector Machine Classifier:
+C = 1, gamma = 0.001
+
+Random Forest Classifier:
+max_depth = 5, min_samples_split = 15, n_estimators = 300, random_state = 0
+
+
+The following table shows the test and train accuracy scores as well as the test roc auc score on the test data. 
+
+
+| Model              | Test Accuracy Score | Train Accuracy Score | ROC AUC Score |
+| ------------------ | ------------------- | -------------------- | ------------- |
+| Logistic Regression| 0.87                | 0.86                 | 0.89          |
+| SVC                | 0.70                | 0.77                 | 0.69          |
+| Random Forest      | 0.88                | 0.92                 | 0.88          |
+
+
+After looking at the results, it looks like that logistic regression may be the best model because there is no signs of over fitting like in the Random Forest Model. The Random Forest Model still has a high training accuracy score, which means it still could be overfitting. The ROC AUC score that was the highest of all the models is the Logistic Regression model with a score of 0.89. There is still always room for more improvement with machine learning models. 
