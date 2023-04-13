@@ -40,10 +40,12 @@ It looks like there is a small correlation between the target variable and trest
 
 Are there any outliers?
 
-insert trestbps boxplot image
+![data_screenshot](boxplot_trestbps.png)
 
 
 Looking at this boxplot, there seems to be quite a few outliers for the attribute trestbps. This could cause an issue in our machine learning model predictions, but we will leave them in the dataset for now. 
+
+I do not believe that there needs to be any feature engineering necessary for this dataset, all of the features have numerical outputs.
 
 
 ## Models
