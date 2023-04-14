@@ -99,3 +99,46 @@ The following table shows the test and train accuracy scores as well as the test
 
 
 After looking at the results, it looks like that logistic regression may be the best model because there is no signs of over fitting like in the Random Forest Model. The Random Forest Model still has a high training accuracy score, which means it still could be overfitting. The ROC AUC score that was the highest of all the models is the Logistic Regression model with a score of 0.89. There is still always room for more improvement with machine learning models. 
+
+## Feature Experiments
+
+### Experiment 1: Scaling the features
+
+The way these features were scaled were f0+2, f1 * 2, f3 ** 2, f4 + 3, f4 * 3, f5 ** 3, ... pattern of i+, *i **i for i =2, then the model was retrained and reevaluated.
+
+### Experiment 2: Adding New Features. 
+
+This experiment consisted of using the puly function from sklearn to create new features.
+
+### Experiment 3: Transform Features.
+
+This experiement consisted of transforming the features using an LDA model. 
+
+### Experiment 4: Preprocessing Features
+This experiement used sklearn's StandardScaler to preprocess the features.
+
+### Experiment 5: Noisy Indicators
+Random features were added to see how the model predicts the target variables with these random features.
+
+### Results
+Accuracy Scores of models with the different experiments
+
+| Model              | Experiment 1 | Experiment 2 | Experiment 3 | Experiment 4 | Experiment 5 |
+| ------------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Logistic Regression|  0.71        | 0.56         | 0.62         | 0.81         | 0.71         |
+| SVC                |  0.62        | 0.62         | 0.62         | 0.62         | 0.62         |
+| Random Forest      |  0.86        | 0.84         | 0.65         | 0.85         | 0.84         |
+
+Experiment 1: The best model when using the features in experiment 1 is logistic regression. Although random forest has a higher accuracy score, the model was overfit since it predicted the train data too well with an accuracy of 100 percent. 
+
+Experiment 2: The best model when using the features in experiment 2 was support vector machines. The accuracy score for the logistic regression was lower than support vector machines. The random forest model was overfit in this experiment as well. 
+
+Experiment 3: The best model when completing experiment 3 was logistic regression and support vector machines, their accuracy scores were the same. The random forest model was again overfit.
+
+Experiment 4: The best model when completing experiment 4 was logistic regression. This model had the highest accuracy score and was not overfit. Random forest model was overfit in this experiment as well. 
+
+Experiment 5: The best model when completing experiment 5 was logistic regression. The model had the highest accuracy score and was not overfit. The random forest model was again overfit. Support vector classifier's accuracy was not quite as high as the logistic regression accuracy score. 
+
+## Recommnded Model
+
+The recommended model after all the experiments is Logistic Regression after hyperparameter tuning. This model predicted whether someone has heart disease or not the most accurate. This model had the highest accuracy scores and logistic regression did the best when completing the different feature experiments as well. A pipeline has been created for this model. 
