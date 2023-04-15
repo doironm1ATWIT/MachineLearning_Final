@@ -139,6 +139,6 @@ Experiment 4: The best model when completing experiment 4 was logistic regressio
 
 Experiment 5: The best model when completing experiment 5 was logistic regression. The model had the highest accuracy score and was not overfit. The random forest model was again overfit. Support vector classifier's accuracy was not quite as high as the logistic regression accuracy score. 
 
-## Recommnded Model
+## Recommended Model
 
 The recommended model after all the experiments is Logistic Regression after hyperparameter tuning. This model predicted whether someone has heart disease or not the most accurate. This model had the highest accuracy scores and logistic regression did the best when completing the different feature experiments as well. A pipeline has been created for this model. 
