@@ -125,7 +125,7 @@ This experiment consisted of using the puly function from sklearn to create new 
 
 ### Experiment 3: Transform Features.
 
-This experiement consisted of transforming the features using an LDA model. 
+This experiement consisted of transforming the features using a PCA model. 
 
 ### Experiment 4: Preprocessing Features
 This experiement used sklearn's StandardScaler to preprocess the features.
