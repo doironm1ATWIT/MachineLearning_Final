@@ -3,7 +3,7 @@
 
 ## Dataset
 
-The dataset used in this project is based on heart disease fro Kaggle (https://www.kaggle.com/datasets/ritwikb3/heart-disease-statlog). There are 270 entries in the dataset. There are 13 attributes in this data set with one target variable. The target variable is labeled with either '0' no heart disease or '1' heart disease is detected. 
+The dataset used in this project is based on heart disease from Kaggle (https://www.kaggle.com/datasets/ritwikb3/heart-disease-statlog). There are 270 entries in the dataset. There are 13 attributes in this data set with one target variable. The target variable is labeled with either '0' no heart disease or '1' heart disease is detected. 
 
 The 13 attributes are the following:
 Age - Patient age in years
